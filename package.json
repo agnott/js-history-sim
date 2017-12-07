@@ -1,0 +1,39 @@
+{
+  "name": "mess-around-js",
+  "version": "1.0.0",
+  "description": "A framework for rapid, programmatic web prototyping.",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "mocha spec",
+    "lint": "eslint src",
+    "docs": "jsdoc src/scripts -r -d docs",
+    "start": "webpack-dev-server --watch-poll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agnott/MessAroundJS.git"
+  },
+  "author": "Andrew Gnott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agnott/MessAroundJS/issues"
+  },
+  "homepage": "https://github.com/agnott/MessAroundJS#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.7.2",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "mocha": "^3.5.3",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
