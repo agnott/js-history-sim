@@ -1,15 +1,17 @@
-// Imports
-const Person = require('./people/Person');
-const Time = require('./shared/TimeService');
+const WorldGraph = require('./graphs/WorldGraph');
 
-// Declarations
-const people = [];
+const world = new WorldGraph(700, 400);
 
-for(let i=0; i<10; i++){
-  people.push(new Person());
-  Time.forward();
-}
-console.log(people);
+world.addVertex(100);
+// world.addEdge(0, 19, 34);
+// world.addEdge(0, 23, 34);
+// world.addEdge(0, 4, 34);
+// world.addEdge(19, 3, 34);
 
-const Identity = require('./shared/IdentityService');
-console.log(Identity);
+world.connect();
+
+world.draw('graph');
+
+console.log(world.dfs(0, 3));
+
+console.log(world.graph);

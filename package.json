@@ -34,6 +34,7 @@
     "webpack-dev-server": "^2.9.5"
   },
   "dependencies": {
+    "svg.js": "^2.6.3",
     "underscore": "^1.8.3"
   }
 }
